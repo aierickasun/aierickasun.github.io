@@ -1,0 +1,34 @@
+<!--web design thread-->
+
+tag names went from appearance to semantics; ie. b to strong, i to em.
+anchor tags: turns in side tags into hypertags
+p: paragraph
+strong: make strong
+em: italicize 
+blockquote: a section that is quoted from antoerh source..> really just has specific css properties.
+
+head contains meta data: data about data. one of which is which char set to use so that it can handle the expanded range of chracters(unicode). <meta charset="utf-8">
+void element are self-closing tags.
+
+for link/anchor tags, atrribs: href(hypertext reference), target="_blank"(opens link in a new tab)
+img tags: src, alt:displayed if img not rendered.
+self closing tags end in > or />
+Linking srcs from other sites is called hotlinking
+download using linux commandline: curl -o imges/kitten.job -OL url.com
+gravatar allows you to associate std imgs with particular email addresses, used to display profile pics on var sites.
+
+code tag desigend to display pieces of markup or src code. 
+In monspace font, all letters have the same width.
+inline element: <strong>/ <em>. all tags that modify text.
+block element: divides page's text up.
+
+Tables: tr: table row. First row usually includes labels for table's columns via table headers: th tag.
+ie: <table><tr><th>Tag</th></tr></table>... adding extra rows consists of simply adding <tr><td>...</td></tr>
+character entity reference: &ndash;.
+lists: ordered<ol> unordered <ul> List: <li>
+Navigation menus:
+style attributes: apend style="" to any html tag
+div is a block element and span is an inline element.
+blockquote tag for quotoing blocks of text
+
+Floats:
