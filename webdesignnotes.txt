@@ -27,8 +27,82 @@ ie: <table><tr><th>Tag</th></tr></table>... adding extra rows consists of simply
 character entity reference: &ndash;.
 lists: ordered<ol> unordered <ul> List: <li>
 Navigation menus:
-style attributes: apend style="" to any html tag
+style attributes: append style="" as an element to any html tag
 div is a block element and span is an inline element.
 blockquote tag for quotoing blocks of text
 
-Floats:
+Float: is a CSS property
+height="200px" to img property restricts heigt to 200 pixels 
+When resizing, use either height or width, not both, as both forces browser to attempt to respect both numbers which can result in wierd image resizing effects.
+To get text to flow around an image, CSS property float. When an element is floating to the left or right(no center), all the inline content around it will flow around the floated element. 
+Applying margins of empty space: 
+-3 styles applicable to imaginary boxes: margin, border, padding.
+Add  property: margin:40px applies to all 4 sides.
+margin: toppx rightpx botpx leftpx... or smiply margin-right/left/top/bottom
+using auto causes everything else to be automatically the same on all sides. margin: 0 auto; would make the top and bottom 0, and left and right automatically margined.
+This is good for centering things that can't be centered w
+ith text-align.
+img is an inline element, and margin only works on block elements, thus to turn inlines to blocks, use style display: block, 
+padding pushes content away from the edges.
+
+CSS:
+vendor prefix: -webkit-, -moz-, -ms- allows applide style to target specific browsers.
+ie:
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+
+ Git steps:
+ $ git init
+$ git add -A
+$ git commit -m "Initialize repo"
+$ git remote add origin <repo url>
+$ git push -u origin master
+$ git checkout -b gh-pages
+$ git push -u origin gh-pages
+div(css selector){
+	declaration(border[property]: 1px solid black[value])
+}
+
+class inheritance: div a{color: green;}
+class: .poo... id: #doo
+background-color
+border
+color
+
+multiple classes: class="bio-box red"
+css specificity. ids have higher specificity than classes, thus ids will override classes, and 
+To make classes have presidence over id, put em together like #exec-bio.alert{ background: red;
+}
+
+width: 100%; width of block spans entire page cept the margins
+
+
+In case of conflicting rules, the final rule is the one that applies.
+
+CSS PRIORITY RULES !IMPORTANT!!!:
+1 	Importance 	Adding !important (e.g., “width: 100% !important”) to a value overrides all other similar styles (but never use !important (Box 8)
+2 	Inline 	A declaration that is put on an element using style=
+3 	Media Type 	When a style is applied through a media query (more in Chapter 9)
+4 	User defined 	Most browsers have the accessibility feature: a user defined CSS
+5 	Selector specificity 	Styling applied via a class or id overwrites generic styling
+6 	Rule order 	The last style written has priority
+7 	Parent inheritance 	If there is no style specified, then children inherit styles from their parent
+8 	CSS 	CSS rules from a stylesheet or style block that are applied to generic elements.
+9 	Browser defaults 	Lowest priority, these are the default styles that browsers ship with
+
+
+background-image: url() by default repeats an image both horizontally and vertically.
+repeat vertically.. background-repeat: repeat-x(horizontally),, repeat-y(vertically)
+
+background-repeat: no-repeat...background-position: right top;
+To make background image fixed(not scroll with rest of page) use background-attachment: fixed.
+shorthand property for background is 
+body{
+	background: $ffffff url("....png") no-repeat fixed;
+	background-size: 100% 100% makes background immunite to zooming
+}
+
+defining own html element:
+

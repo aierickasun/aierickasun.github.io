@@ -1,6 +1,29 @@
 img {
-    max-width: 100%;
-    height: auto;
-    width: auto\9; /* ie8 */
+	display: block;
+    width: 100%; /* ie8 / as opposed to auto which sin't dynamic in size*/
+
+}
+ul{
+	list-style:none;
 }
 
+div{
+	background-color: #00cc66;
+	width:600px;
+	margin: 0 auto;
+	padding: 10px 10px 10px 10px;
+}
+.centers{
+	text-align: center;
+}
+body{
+
+	background: url("background.jpg") no-repeat fixed;
+	background-size: 100% 100%;
+}
+div.coded {
+	background-color: #aaaaaa;
+	width: auto;
+	margin-left: 10px;
+	margin-right: 10px;
+}
