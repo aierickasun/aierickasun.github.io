@@ -78,6 +78,7 @@ To make classes have presidence over id, put em together like #exec-bio.alert{ b
 
 width: 100%; width of block spans entire page cept the margins
 
+In CSS, styling rules flow down from parents to children unless another style interrupts and takes priority.
 
 In case of conflicting rules, the final rule is the one that applies.
 
@@ -104,5 +105,12 @@ body{
 	background-size: 100% 100% makes background immunite to zooming
 }
 
-defining own html element:
+Specificity Styling(Priority):
+Simple HTML selector 	em {color: #fff;} 	1
+HTML selector targeting element inside another element 	h1 em {color: #00ff00;} 	2
+CSS class name 	.alert {color: #ff0000;} 	1,0
+HTML element with a class name 	p.safe {color: #0000ff;} 	1,1
+CSS id 	#thing {color: #823706;} 	1,0,0
+CSS id with a class name 	#thing .property {color: #823706;} 	1,1,0
+Inline style 	style="color: transparent;" 	1,0,0,0
 
