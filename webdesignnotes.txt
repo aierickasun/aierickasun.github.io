@@ -114,3 +114,4 @@ CSS id 	#thing {color: #823706;} 	1,0,0
 CSS id with a class name 	#thing .property {color: #823706;} 	1,1,0
 Inline style 	style="color: transparent;" 	1,0,0,0
 
+browsers read CSS selectors from right to left.
