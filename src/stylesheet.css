@@ -3,6 +3,9 @@ img {
     width: 100%; /* ie8 / as opposed to auto which sin't dynamic in size*/
 
 }
+span{
+	background-color: #fff;
+}
 ul{
 	list-style:none;
 }
